@@ -1,4 +1,4 @@
-const {reverseString,stringLength} = require('./stringFunctions');
+const {reverseString,stringLength, capitalizeString} = require('./stringFunctions');
 
 
 test('Get length of the apple word', () => {
@@ -16,4 +16,8 @@ test('Get length of an empty word', () => {
 
 test('Reverse a string', () => {
   expect(reverseString('abc')).toEqual('cba');
+});
+
+test('Capitalize a string', () => {
+  expect(capitalizeString('apple')).toEqual('Apple');
 });
